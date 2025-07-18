@@ -276,7 +276,7 @@ const SidebarTrigger = React.forwardRef<
   const { toggleSidebar } = useSidebar();
 
   return (
-    <button onClick={toggleSidebar} className="pl-1 pt-1">{useSidebar().state === "expanded" ? <PanelRightOpen size={23} strokeWidth={1.5} /> : <PanelRightClose size={23} strokeWidth={1.5} />}</button>
+    <button onClick={toggleSidebar} className="pl-2 pt-2">{useSidebar().state === "expanded" ? <PanelRightOpen size={24} strokeWidth={1.5} /> : <PanelRightClose size={24} strokeWidth={1.5} />}</button>
   );
 
   // return (
