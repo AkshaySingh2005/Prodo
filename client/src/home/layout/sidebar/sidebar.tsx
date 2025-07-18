@@ -14,7 +14,7 @@ export default function SidebarMain({ children }: { children: React.ReactNode })
     >
       <AppSidebar />
       <main>
-        <SidebarTrigger />
+        <SidebarTrigger/>
         {children}
       </main>
     </SidebarProvider>
