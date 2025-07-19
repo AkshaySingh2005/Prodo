@@ -1,4 +1,4 @@
-import { Bell, Settings, Plus, Filter } from "lucide-react";
+import { Bell, Settings} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -16,36 +16,37 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 const HeaderMain = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex h-14 items-center justify-between pl-2 pr-5 w-full">
+      <div className="flex h-11 items-center justify-between pl-2 pr-5 w-full">
         {/* Left Section: Sidebar Trigger & Title */}
         <div className="flex items-center gap-4 min-w-fit">
           <SidebarTrigger />
           <div className="hidden md:flex items-center">
-            <h1 className="text-[1.4rem] font-semibold text-foreground">
-              Dashboard
+           
+            <h1 className="text-[1.2rem] font-semibold text-foreground">
+              Prodo
             </h1>
           </div>
         </div>
 
         {/* Right Section: Actions & User */}
-        <div className="flex items-center gap-4">
-          <Button
+        <div className="flex items-center gap-2">
+          {/* <Button
             variant="outline"
             size="default"
-            className="gap-2 hidden sm:flex h-10"
+            className="gap-2 hidden sm:flex h-8"
           >
             <Plus className="h-4 w-4" />
             <span className="hidden lg:inline">New</span>
-          </Button>
+          </Button> */}
 
           {/* Mobile New Button */}
-          <Button variant="outline" size="icon" className="sm:hidden h-10 w-10">
+          {/* <Button variant="outline" size="icon" className="sm:hidden h-8 w-10">
             <Plus className="h-4 w-4" />
-          </Button>
+          </Button> */}
 
-          <Button variant="ghost" size="icon" className="h-10 w-10">
+          {/* <Button variant="ghost" size="icon" className="h-8 w-10">
             <Filter className="h-4 w-4" />
-          </Button>
+          </Button> */}
 
           {/* Notifications */}
           <DropdownMenu>
@@ -53,9 +54,9 @@ const HeaderMain = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="relative h-10 w-10"
+                className="relative h-8 w-10"
               >
-                <Bell className="h-4 w-4" />
+                <Bell className="h-5 w-5" />
                 <Badge
                   variant="destructive"
                   className="absolute -top-1 -right-1 h-5 w-5 text-xs p-0 flex items-center justify-center"
@@ -104,9 +105,9 @@ const HeaderMain = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="hidden sm:flex h-10 w-10"
+            className="hidden sm:flex h-8 w-10"
           >
-            <Settings className="h-4 w-4" />
+            <Settings className="h-5 w-4" />
           </Button>
 
           {/* Theme Toggle */}
@@ -119,7 +120,7 @@ const HeaderMain = () => {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
-                className="relative h-10 w-10 rounded-full"
+                className="relative h-8 w-10 rounded-full"
               >
                 <Avatar className="h-9 w-9">
                   <AvatarImage src="/avatars/shadcn.jpg" alt="User" />

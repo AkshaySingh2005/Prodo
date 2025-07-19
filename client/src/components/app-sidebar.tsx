@@ -8,6 +8,7 @@ import {
   Wrench,
   ListTodo,
   Handshake,
+  Settings,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -21,6 +22,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { NavSettings } from "./ui/nav-settings"
 
 
 
@@ -123,7 +125,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         {/* <NavProjects projects={data.projects} /> */}
       </SidebarContent>
       <SidebarFooter>
-       
+        <NavSettings/>
         <NavUser user={data.user} />
       </SidebarFooter>
       <SidebarRail />

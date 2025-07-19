@@ -16,8 +16,9 @@ const ModeToggle = () => {
 
   return (
     <Button
-      variant={theme === "light" ? "outline" : "ghost"}
+      variant="ghost"
       size="icon"
+      className="h-8 w-8"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <motion.div
@@ -28,9 +29,9 @@ const ModeToggle = () => {
         key={theme}
       >
         {theme === "light" ? (
-          <Moon className="h-5 w-5" />
+          <Moon className="h-4 w-4" />
         ) : (
-          <Sun className="h-5 w-5" />
+          <Sun className="h-4 w-4" />
         )}
       </motion.div>
       <span className="sr-only">Toggle theme</span>

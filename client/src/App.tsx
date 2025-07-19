@@ -7,14 +7,14 @@ const App = () => {
     <SidebarMain>
       <div className="flex flex-col min-h-screen">
         <HeaderMain />
-        <main className="flex-1 p-3">
+        {/* <main className="flex-1 p-3">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl font-bold mb-6">Welcome to Prodo</h1>
             <p className="text-muted-foreground">
               Your product management workspace
             </p>
           </div>
-        </main>
+        </main> */}
         {/* <FooterMain /> */}
       </div>
     </SidebarMain>
