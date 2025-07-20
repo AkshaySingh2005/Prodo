@@ -1,7 +1,7 @@
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 
-const SIDEBAR_WIDTH = "14rem";
+const SIDEBAR_WIDTH = "13rem";
 const SIDEBAR_WIDTH_MOBILE = "18rem";
 
 export default function SidebarMain({

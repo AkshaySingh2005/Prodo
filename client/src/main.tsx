@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/tasks" element={<Task />} />
         </Routes>
       </BrowserRouter>

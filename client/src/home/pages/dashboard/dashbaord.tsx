@@ -1,11 +1,11 @@
-
+import App from "@/App";
 
 const Dashboard = () => {
   return (
-    <div>
-      hii this is dashboard
-    </div>
-  )
-}
+    <App>
+      This is the Dashboard page.
+    </App>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

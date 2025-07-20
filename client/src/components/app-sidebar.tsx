@@ -7,6 +7,7 @@ import {
   MessageCircle,
   Wrench,
   ListTodo,
+  Calendar,
   Handshake,
 } from "lucide-react";
 
@@ -48,7 +49,7 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "/",
+      url: "/dashboard",
       icon: LayoutDashboard,
       isActive: true,
       collapsible: false,
@@ -88,6 +89,12 @@ const data = {
       title: "Teams",
       url: "/teams",
       icon: Handshake,
+      collapsible: false,
+    },
+    {
+      title: "Calendar",
+      url: "/calendar",
+      icon: Calendar,
       collapsible: false,
     },
   ],
