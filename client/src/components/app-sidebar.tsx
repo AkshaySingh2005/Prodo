@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 import {
   AudioWaveform,
   Command,
@@ -8,23 +8,19 @@ import {
   Wrench,
   ListTodo,
   Handshake,
-  Settings,
-} from "lucide-react"
+} from "lucide-react";
 
-import { NavMain } from "@/components/nav-main"
-// import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
+import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
-import { NavSettings } from "./ui/nav-settings"
-
-
+} from "@/components/ui/sidebar";
+import { NavSettings } from "./ui/nav-settings";
 
 const data = {
   user: {
@@ -52,21 +48,21 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: LayoutDashboard,
       isActive: true,
-      collapsible:false,
+      collapsible: false,
     },
     {
       title: "Chat",
-      url: "#",
+      url: "/chats",
       icon: MessageCircle,
-      collapsible:false,
+      collapsible: false,
     },
     {
       title: "Projects",
-      url: "#",
-      icon: Wrench  ,
+      url: "/projects",
+      icon: Wrench,
       items: [
         {
           title: "Warehouse Automation",
@@ -84,15 +80,15 @@ const data = {
     },
     {
       title: "Tasks",
-      url: "#",
+      url: "/tasks",
       icon: ListTodo,
-      collapsible:false,
+      collapsible: false,
     },
     {
       title: "Teams",
-      url: "#",
-      icon: Handshake ,
-      collapsible:false,
+      url: "/teams",
+      icon: Handshake,
+      collapsible: false,
     },
   ],
   // projects: [
@@ -112,7 +108,7 @@ const data = {
   //     icon: Map,
   //   },
   // ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -125,10 +121,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         {/* <NavProjects projects={data.projects} /> */}
       </SidebarContent>
       <SidebarFooter>
-        <NavSettings/>
+        <NavSettings />
         <NavUser user={data.user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }
